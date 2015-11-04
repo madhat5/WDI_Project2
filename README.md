@@ -1,4 +1,4 @@
-Note.ed WDI Project2, David M.
+Note.ed - WDI Project2, David M.
 ------
 
 App ticket: https://github.com/madhat5/wdi_lettuce_students/blob/master/projects/project2_prompt.md
