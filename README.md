@@ -1,16 +1,20 @@
-David M. - Project2
+Note.ed WDI Project2, David M.
 ------
+
 App ticket: https://github.com/madhat5/wdi_lettuce_students/blob/master/projects/project2_prompt.md
 Project link: https://github.com/madhat5/WDI_Project2
 
-<quote>
+
+> "Tell me and I forget. Teach me and I remember. Involve me and I learn." Ben Franklin
+> 
+> "I am always doing that which I cannot do, in order that I may learn how to do it." Pablo Picasso
 
 
-REQUIREMENTS:
+App Ticket, REQUIREMENTS:
 (--o-- open)
 (--x-- complete)
 
-- 1. Have at least 2 models (more if they make sense):
+- 1. Have at least 2 models (more if they make sense): --o--
     > one representing someone using your application, 
     > and one that represents the main functional idea for your app
 
@@ -30,46 +34,62 @@ REQUIREMENTS:
 - 7. Be deployed online and accessible to the public --o--
     > Include README
 
+
 ------
-LAYOUT
+------
+CONCEPT / LAYOUT
 ------
 
-<app layout>
+This app will alow users to:
+    - Login,
+    - Post classroom notes (by subject) to their profile,
+    - View other users' classroom notes,
+    - Bookmark other user's classroom notes
+
 
 - Frameworks used (goals):
     - Rails
     - Devise (user authentification)
     - Bootstrap (user inter)
 
-- Pages:
-    - Homepage
 
 ------
 
+Pages:
+    > define all mvp pages
+        > all RESTfull routes?
+    > define all actions/controllers/view associated with
+
 - Homepage
-  - lists users and,
-  - lists all users' posts (or only most recent from each)
-  - (login)
+  - lists total number of user notes
+  - lists total number of user notes/subject
+  - Login
+    > Register?
+  - 
 
 - User profile
-  - lists profile and,
-  - lists all user's posts
+  - lists my_notes table
+    > 
+  - lists my_bookmarks
+
+- Subject profile
+  - lists a table
+    > user | keyword
+  - keyword links to full classroom note
 
 Database tables:
 
 - Users
-  - Name
-  - Animal kind
-  - Img
+  - 
 
 - Posts
-  - title
-  - content
+  - 
 
-- Profiles
-  - post.id
-  - user.id
+- Subject
+  - 
 
+- Join tables:
+  - 
 
 
 ------
@@ -123,7 +143,6 @@ SCRIPT TRACK
 
 - User log-in/out
 
-- Extras?
 
 
 
@@ -132,13 +151,7 @@ SCRIPT TRACK
 BUG TRACK
 ------
 
-- Seed
-    - 
-
-- Migrate
-    - 
-
-- Seed
+- App_section
     - 
 
 
