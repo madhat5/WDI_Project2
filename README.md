@@ -127,7 +127,8 @@ http://www.bootstrapzero.com/bootstrap-template/blog
 Database tables:
 
 - Users
-  - name (genereated by Devise)
+  - Genereated by Devise
+    - added user_name
 
 - Notes
   - keyword | content | subject_name | published_by
@@ -162,8 +163,8 @@ SCRIPT TRACK
     - update routes (config/routes.rb)
 
 - Database --o--
-    - database create/check (rake db:create >> rails dbconsole)                                        --x--
-    - model create (rails g model Name >> rails g controller names)                                    --o--
+    - database create/check (rake db:create >> rails dbconsole)
+    - model create (rails g model Name >> rails g controller names)
         - x#tables
     - update migration files (db/migrate)
     - create JoinTable migrate (rails g migration CreateJoinTable table_names1 table_names2) …by alpha…
