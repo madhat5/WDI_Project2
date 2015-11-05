@@ -95,7 +95,7 @@ http://startbootstrap.com/template-overviews/heroic-features/
         - keyword <link>
             - changes text in display to actual notes
   - lists my_bookmarks
-    - user | subject | keyword | date?
+    - user | subject | keyword | date? | fk
         - user <link> 
             - redirects to other users' profile 
         - subject <link> 
@@ -103,10 +103,10 @@ http://startbootstrap.com/template-overviews/heroic-features/
         - keyword <link>
             - changes text in display to actual notes    
 
-- User profiles (other)
+- User profiles (other users)
 http://startbootstrap.com/template-overviews/heroic-features/
   - lists notes table (displays 4/time, scroll for more)
-    - subject | keyword | date?
+    - subject | keyword | date? 
         - subject <link> 
             - redirects to subject profile
         - keyword <link>
@@ -127,16 +127,14 @@ http://www.bootstrapzero.com/bootstrap-template/blog
 Database tables:
 
 - Users
-  - name | password?
+  - name (genereated by Devise)
 
 - Notes
-  - keyword | content
+  - keyword | content | subject_name | published_by
 
-- Subject
-  - name
-
-- Join tables:
-  - 
+- Join tables: (make modoel with boolean)
+  - note | user
+    - many to many (has_and_belongs_to_many)
 
 
 ------
@@ -145,28 +143,33 @@ SCRIPT TRACK
 (--o-- open)
 (--x-- complete)
 
-- Update README
+- Update README --o--
+    - https://gist.github.com/madhat5
 
 - App --x--
     - app setup (rails new name_app -d postgresql)
     - ensure dependencies (bundle install)
     - add gems (devise, pry-rails)
 
-- User authentification --o--
+- User authentification --x--
     - Devise (rails g devise:install)
-    - Update config/environments/development.rb
-    - Update app/views/layouts/application.html.erb
-    - user model generate (rails g devise user >> rails db:migrate)
+    - Update enviromnment (config/environments/development.rb)
+    - Update application view (app/views/layouts/application.html.erb)
+    - user model generate (rails g devise user >> rake db:create >>rake db:migrate)
+    - update aplication (app/views/layouts/application.html.erb)
+    - force not logged redirect (app/controllers/application_controller.rb)
+    - copy all views to application (rails g devise:views)
+    - update routes (config/routes.rb)
 
-- Database
-    - database create/check (rake db:create / rails dbconsole)
-    - model create (rails g model Name >> rails g controller names)
+- Database --o--
+    - database create/check (rake db:create / rails dbconsole)                                --x--
+    - model create (rails g model Name >> rails g controller names)                           --o--
         - x#tables
-    - update migration files (app/db/migrate)
+    - update migration files (db/migrate)
     - create JoinTable migrate (rails g migration CreateJoinTable table_names1 table_names2) …by alpha...
     - schema migrate/test (rake db:migrate / rails dbconsole)
 
-- Test
+- Test --o--
     - launch server (rails s)
     - update README
 
@@ -176,7 +179,7 @@ SCRIPT TRACK
     - import/test (rake db:seed / rails dbconsole)
     - model test (rails c >> Name.all)
 
-- Routes
+- Routes --o--
     - route test (rake routes)
     - route create (route.rb)
 
@@ -189,17 +192,13 @@ SCRIPT TRACK
 - Views --o--
     - >>>>>>>>>>>>>(INDEX/SHOW ONLY to start)<<<<<<<<<<<<<<<<<
     - Bootstrap
-    - folder create (mkdir app/views/names)
+    - folder create (mkdir app/views/names)                                                   --x--
     - views create (touch app/views/names/index.html.erb)
         - x5 (_form, show, new, edit)
 
-- Test
+- Test --o--
     - launch server (rails s)
     - update README
-
-
-
-
 
 
 ------
