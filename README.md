@@ -35,6 +35,13 @@ App Ticket, REQUIREMENTS:
     > Include README
 
 
+- Reference:
+    - Week 5
+        - day 4/5
+
+    - Week 6
+        - all
+
 ------
 ------
 CONCEPT / LAYOUT
@@ -56,11 +63,13 @@ This app will alow users to:
 ------
 
 Pages:
+    
     > define all mvp pages
         > all RESTfull routes?
     > define all actions/controllers/view associated with
 
 - Homepage (no login needed for data display)
+http://www.bootstrapzero.com/bootstrap-template/landing-page
   - lists total number of user notes
     - "There are #x notes"
   - lists total number of user notes/subject as table:
@@ -71,7 +80,12 @@ Pages:
     - redirects to register form (forms page)
         - use modals for buttons?
 
+- Login / Register (form)
+  - if login pass != login pass then redirect back to login (display wrong password?)
+    - else redicret to User profile
+
 - User profile (login needed)
+http://startbootstrap.com/template-overviews/heroic-features/
   - displays user name
     - change password <button>?
   - lists my_notes table (displays 4/time, scroll for more)
@@ -90,6 +104,7 @@ Pages:
             - changes text in display to actual notes    
 
 - User profiles (other)
+http://startbootstrap.com/template-overviews/heroic-features/
   - lists notes table (displays 4/time, scroll for more)
     - subject | keyword | date?
         - subject <link> 
@@ -98,6 +113,7 @@ Pages:
             - changes text in display to actual notes
 
 - Subject profile (login needed)
+http://www.bootstrapzero.com/bootstrap-template/blog
   - lists a table
     - subject | keyword | user
         - user <link> 
@@ -107,9 +123,6 @@ Pages:
         - keyword <link>
             - changes text in display to actual notes   
 
-- Login / Register
-  - if login pass != login pass then redirect back to login (display wrong password?)
-    - else redicret to User profile
 
 Database tables:
 
@@ -117,10 +130,10 @@ Database tables:
   - name | password?
 
 - Notes
-  - 
+  - keyword | content
 
 - Subject
-  - 
+  - name
 
 - Join tables:
   - 
@@ -134,15 +147,18 @@ SCRIPT TRACK
 
 - Update README
 
-- (User log-in/out)
-
-- (Bootstrap)
-
-- App 
+- App --x--
     - app setup (rails new name_app -d postgresql)
     - ensure dependencies (bundle install)
+    - add gems (devise, pry-rails)
 
-- Database 
+- User authentification --o--
+    - Devise (rails g devise:install)
+    - Update config/environments/development.rb
+    - Update app/views/layouts/application.html.erb
+    - user model generate (rails g devise user >> rails db:migrate)
+
+- Database
     - database create/check (rake db:create / rails dbconsole)
     - model create (rails g model Name >> rails g controller names)
         - x#tables
@@ -170,7 +186,9 @@ SCRIPT TRACK
     - method writeup (per controller)
         - x7 (index, show, create, new, edit, update, delete)
 
-- Views >>>>>>>>>>>>>(INDEX/SHOW ONLY to start)<<<<<<<<<<<<<<<<<
+- Views --o--
+    - >>>>>>>>>>>>>(INDEX/SHOW ONLY to start)<<<<<<<<<<<<<<<<<
+    - Bootstrap
     - folder create (mkdir app/views/names)
     - views create (touch app/views/names/index.html.erb)
         - x5 (_form, show, new, edit)
