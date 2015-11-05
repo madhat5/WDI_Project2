@@ -60,29 +60,63 @@ Pages:
         > all RESTfull routes?
     > define all actions/controllers/view associated with
 
-- Homepage
+- Homepage (no login needed for data display)
   - lists total number of user notes
-  - lists total number of user notes/subject
-  - Login
-    > Register?
+    - "There are #x notes"
+  - lists total number of user notes/subject as table:
+    - subject | #x notes
+  - Login <button>
+    - redirects to login form (forms page)
+  - Register <button>
+    - redirects to register form (forms page)
+        - use modals for buttons?
 
-- User profile
-  - lists my_notes table
-    > subject | keyword | date?
+- User profile (login needed)
+  - displays user name
+    - change password <button>?
+  - lists my_notes table (displays 4/time, scroll for more)
+    - subject | keyword | date?
+        - subject <link> 
+            - redirects to subject profile
+        - keyword <link>
+            - changes text in display to actual notes
   - lists my_bookmarks
-    > user | subject | keyword | date?
+    - user | subject | keyword | date?
+        - user <link> 
+            - redirects to other users' profile 
+        - subject <link> 
+            - redirects to subject profile
+        - keyword <link>
+            - changes text in display to actual notes    
 
-- Subject profile
+- User profiles (other)
+  - lists notes table (displays 4/time, scroll for more)
+    - subject | keyword | date?
+        - subject <link> 
+            - redirects to subject profile
+        - keyword <link>
+            - changes text in display to actual notes
+
+- Subject profile (login needed)
   - lists a table
-    > user | keyword
-  - keyword links to full classroom note
+    - subject | keyword | user
+        - user <link> 
+            - redirects to other users' profile 
+        - subject <link> 
+            - redirects to subject profile
+        - keyword <link>
+            - changes text in display to actual notes   
+
+- Login / Register
+  - if login pass != login pass then redirect back to login (display wrong password?)
+    - else redicret to User profile
 
 Database tables:
 
 - Users
-  - 
+  - name | password?
 
-- Posts
+- Notes
   - 
 
 - Subject
