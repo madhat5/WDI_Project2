@@ -162,11 +162,11 @@ SCRIPT TRACK
     - update routes (config/routes.rb)
 
 - Database --o--
-    - database create/check (rake db:create / rails dbconsole)                                --x--
-    - model create (rails g model Name >> rails g controller names)                           --o--
+    - database create/check (rake db:create >> rails dbconsole)                                        --x--
+    - model create (rails g model Name >> rails g controller names)                                    --o--
         - x#tables
     - update migration files (db/migrate)
-    - create JoinTable migrate (rails g migration CreateJoinTable table_names1 table_names2) …by alpha...
+    - create JoinTable migrate (rails g migration CreateJoinTable table_names1 table_names2) …by alpha…
     - schema migrate/test (rake db:migrate / rails dbconsole)
 
 - Test --o--
@@ -192,7 +192,7 @@ SCRIPT TRACK
 - Views --o--
     - >>>>>>>>>>>>>(INDEX/SHOW ONLY to start)<<<<<<<<<<<<<<<<<
     - Bootstrap
-    - folder create (mkdir app/views/names)                                                   --x--
+    - folder create (mkdir app/views/names)                                                             --x--
     - views create (touch app/views/names/index.html.erb)
         - x5 (_form, show, new, edit)
 
