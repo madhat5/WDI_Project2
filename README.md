@@ -3,13 +3,13 @@ Note.ed - WDI Project2, David M.
 
 App ticket: https://github.com/madhat5/wdi_lettuce_students/blob/master/projects/project2_prompt.md
 Project link: https://github.com/madhat5/WDI_Project2
-//
-//
+
+
 > "Tell me and I forget. Teach me and I remember. Involve me and I learn." Ben Franklin
 > 
 > "I am always doing that which I cannot do, in order that I may learn how to do it." Pablo Picasso
-//
-//
+
+
 App Ticket, REQUIREMENTS:
 (--o-- open)
 (--x-- complete)
@@ -65,12 +65,12 @@ Pages:
   - lists total number of user notes/subject
   - Login
     > Register?
-  - 
 
 - User profile
   - lists my_notes table
-    > 
+    > subject | keyword | date?
   - lists my_bookmarks
+    > user | subject | keyword | date?
 
 - Subject profile
   - lists a table
@@ -99,6 +99,10 @@ SCRIPT TRACK
 (--x-- complete)
 
 - Update README
+
+- (User log-in/out)
+
+- (Bootstrap)
 
 - App 
     - app setup (rails new name_app -d postgresql)
@@ -141,7 +145,6 @@ SCRIPT TRACK
     - launch server (rails s)
     - update README
 
-- User log-in/out
 
 
 
