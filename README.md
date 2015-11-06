@@ -14,17 +14,17 @@ App Ticket, REQUIREMENTS:
 (--o-- open)
 (--x-- complete)
 
-- 1. Have at least 2 models (more if they make sense): --o--
+- 1. Have at least 2 models (more if they make sense): --x--
     > one representing someone using your application, 
     > and one that represents the main functional idea for your app
 
-- 2. Include sign up/log in functionality, 
+- 2. Include sign up/log in functionality, --x--
     > with encrypted passwords & an authorization flow
     > (DEVISE)
 
-- 3. Have complete RESTful routes for at least one of your resources with GET, POST, PUT, PATCH, and DELETE
+- 3. Have complete RESTful routes for at least one of your resources with GET, POST, PUT, PATCH, and DELETE --o--
 
-- 4. Utilize an ORM to create a database table structure and interact with your relationally-stored data
+- 4. Utilize an ORM to create a database table structure and interact with your relationally-stored data --o--
 
 - 5. Include wireframes that you designed during the planning process
 
@@ -152,7 +152,7 @@ SCRIPT TRACK
     - ensure dependencies (bundle install)
     - add gems (devise, pry-rails)
 
-- User authentification --x--
+- User authentification --o--
     - Devise (rails g devise:install)
     - Update enviromnment (config/environments/development.rb)
     - Update application view (app/views/layouts/application.html.erb)
@@ -162,7 +162,7 @@ SCRIPT TRACK
     - copy all views to application (rails g devise:views)
     - update routes (config/routes.rb)
 
-- Database --o--
+- Database --o--  >>>>>CLEAR USER DATA???<<<<<<
     - database create/check (rake db:create >> rails dbconsole)
     - model create (rails g model Name >> rails g controller names)
         - x#tables
@@ -174,7 +174,7 @@ SCRIPT TRACK
     - launch server (rails s)
     - update README
 
-- Models(Seeds) 
+- Models(Seeds) --o--
     - models update (app/models/name.rb)
     - update seed.rb
     - import/test (rake db:seed / rails dbconsole)
@@ -206,7 +206,7 @@ SCRIPT TRACK
 BUG TRACK
 ------
 
-- App_section
+- Script track ection
     - 
 
 
