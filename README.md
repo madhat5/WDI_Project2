@@ -204,6 +204,9 @@ SCRIPT TRACK
     - launch server (rails s)
     - update README
 
+- Heroku
+    - https://github.com/ga-students/wdi_lettuce_students/blob/master/w06/d05/INSTRUCTOR/heroku.md
+
 - Extras
     - make Number42 user as sample notes
 
