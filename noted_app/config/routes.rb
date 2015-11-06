@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, :controllers => { registrations: 'registrations' }
+  # remove script after :users to view users/sign_up
 
   root 'users#index'
 
