@@ -175,13 +175,13 @@ SCRIPT TRACK
     - update README
 
 - Models(Seeds) --o--
-    - models update (app/models/name.rb)                                                --o--
-    - update seed.rb                                                                    --o--
+    - models update (app/models/name.rb)
+    - update seed.rb
     - import/test (rake db:seed / rails dbconsole)
     - model test (rails c >> Name.all)
 
 - Routes --o--
-    - route test (rake routes)
+    - route test (rake routes) --o--
     - route create (route.rb)
 
 - Controller --o--
@@ -190,15 +190,17 @@ SCRIPT TRACK
 
 - Views --o--
     - >>>>>>>>>>>>>(INDEX/SHOW ONLY to start)<<<<<<<<<<<<<<<<< 
-    - Bootstrap
     - folder create (mkdir app/views/names)
     - views create (touch app/views/names/index.html.erb)
         - x5 (_form, show, new, edit)
+    - Bootstrap
 
 - Test --o--
     - launch server (rails s)
     - update README
 
+- Extras
+    - make Number42 user as sample notes
 
 ------
 BUG TRACK
