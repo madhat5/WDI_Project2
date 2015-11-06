@@ -10,31 +10,31 @@ Note.ed - WDI Project2, David M.
 > 
 > "I am always doing that which I cannot do, in order that I may learn how to do it." Pablo Picasso
 
-
+------
 App Ticket, REQUIREMENTS:
 (--o-- open)
 (--x-- complete)
 
 - 1. Have at least 2 models (more if they make sense): --x--
-    > one representing someone using your application, 
-    > and one that represents the main functional idea for your app
+    - one representing someone using your application, 
+    - and one that represents the main functional idea for your app
 
 - 2. Include sign up/log in functionality, --x--
-    > with encrypted passwords & an authorization flow
-    > (DEVISE)
+    - with encrypted passwords & an authorization flow
+    - (DEVISE)
 
 - 3. Have complete RESTful routes for at least one of your resources with GET, POST, PUT, PATCH, and DELETE --o--
 
 - 4. Utilize an ORM to create a database table structure and interact with your relationally-stored data --x--
 
 - 5. Include wireframes that you designed during the planning process --x--
-    > (README)
+    - (README)
 
 - 6. Have semantically clean HTML and CSS ()
-    > (BOOTSTRAP)
+    - (BOOTSTRAP)
 
 - 7. Be deployed online and accessible to the public --o--
-    > Include README
+    - Include README
 
 
 - Reference:
@@ -246,7 +246,7 @@ COMMENTS / QUESTIONS
 - take views from app/views/devise for custom registration views
     - update registrations controller
 
-
+- What does scaffold do?
 
 
 

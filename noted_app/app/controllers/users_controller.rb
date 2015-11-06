@@ -3,9 +3,10 @@ class UsersController < ApplicationController
 
   def index
     #test
-    @test = "Sim Sim Salabim"
+    # @test = "Sim Sim Salabim"
 
-    # @users = User.all
+    @users = User.all
+    @notes = Note.all
   end
 
   def show
