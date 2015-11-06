@@ -175,8 +175,8 @@ SCRIPT TRACK
     - update README
 
 - Models(Seeds) --o--
-    - models update (app/models/name.rb)
-    - update seed.rb
+    - models update (app/models/name.rb)                                                --o--
+    - update seed.rb                                                                    --o--
     - import/test (rake db:seed / rails dbconsole)
     - model test (rails c >> Name.all)
 
@@ -184,16 +184,14 @@ SCRIPT TRACK
     - route test (rake routes)
     - route create (route.rb)
 
-- Controller
-    
-    - controller create (touch app/names_controller.rb)
+- Controller --o--
     - method writeup (per controller)
         - x7 (index, show, create, new, edit, update, delete)
 
 - Views --o--
-    - >>>>>>>>>>>>>(INDEX/SHOW ONLY to start)<<<<<<<<<<<<<<<<<
+    - >>>>>>>>>>>>>(INDEX/SHOW ONLY to start)<<<<<<<<<<<<<<<<< 
     - Bootstrap
-    - folder create (mkdir app/views/names)                                                             --x--
+    - folder create (mkdir app/views/names)
     - views create (touch app/views/names/index.html.erb)
         - x5 (_form, show, new, edit)
 
@@ -211,8 +209,10 @@ BUG TRACK
     solution: cleared users table. ran rails dbconsole >> delete from users.
     source: http://www.postgresql.org/docs/8.2/static/dml-delete.html
 
-
-
+- Test
+    bug: uninitialized constant RegistrationsController
+    solution:
+    source: 
 
 
 
