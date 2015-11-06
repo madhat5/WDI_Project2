@@ -1,5 +1,6 @@
 Note.ed - WDI Project2, David M.
 ------
+------
 
 App ticket: https://github.com/madhat5/wdi_lettuce_students/blob/master/projects/project2_prompt.md
 Project link: https://github.com/madhat5/WDI_Project2
@@ -24,9 +25,10 @@ App Ticket, REQUIREMENTS:
 
 - 3. Have complete RESTful routes for at least one of your resources with GET, POST, PUT, PATCH, and DELETE --o--
 
-- 4. Utilize an ORM to create a database table structure and interact with your relationally-stored data --o--
+- 4. Utilize an ORM to create a database table structure and interact with your relationally-stored data --x--
 
-- 5. Include wireframes that you designed during the planning process
+- 5. Include wireframes that you designed during the planning process --x--
+    > (README)
 
 - 6. Have semantically clean HTML and CSS ()
     > (BOOTSTRAP)
@@ -143,8 +145,11 @@ SCRIPT TRACK
 ------
 (--o-- open)
 (--x-- complete)
+(--ox-- ongoing)
+(>> = command then command)
+(=> write in file)
 
-- Update README --o--
+- Update README --ox--
     - https://gist.github.com/madhat5
 
 - App --x--
@@ -156,7 +161,7 @@ SCRIPT TRACK
     - Devise (rails g devise:install)
     - Update enviromnment (config/environments/development.rb)
     - Update application view (app/views/layouts/application.html.erb)
-    - user model generate (rails g devise user >> rake db:create >>rake db:migrate)
+    - user model generate (rails g devise user >> rake db:create >> rake db:migrate)
     - update aplication (app/views/layouts/application.html.erb)
     - force not logged redirect (app/controllers/application_controller.rb)
     - copy all views to application (rails g devise:views)
@@ -170,32 +175,32 @@ SCRIPT TRACK
     - create JoinTable migrate (rails g migration CreateJoinTable table_names1 table_names2) …by alpha…
     - schema migrate/test (rake db:migrate / rails dbconsole)
 
-- Test --o--
+- Test --ox--
     - launch server (rails s)
     - update README
 
-- Models(Seeds) --o--
+- Models(Seeds) --ox--
     - models update (app/models/name.rb)
     - update seed.rb
     - import/test (rake db:seed / rails dbconsole)
     - model test (rails c >> Name.all)
 
-- Routes --o--
-    - route test (rake routes) --o--
-    - route create (route.rb)
+- Routes --x--
+    - route test (rake routes)
+    - route create (config/route.rb => resources :names)
 
 - Controller --o--
     - method writeup (per controller)
-        - x7 (index, show, create, new, edit, update, delete)
+        - up to x7 (index, show, create, new, edit, update, delete)
 
 - Views --o--
-    - >>>>>>>>>>>>>(INDEX/SHOW ONLY to start)<<<<<<<<<<<<<<<<< 
+    - INDEX/SHOW/CREATE only to start
     - folder create (mkdir app/views/names)
     - views create (touch app/views/names/index.html.erb)
         - x5 (_form, show, new, edit)
     - Bootstrap
 
-- Test --o--
+- Test --ox--
     - launch server (rails s)
     - update README
 
@@ -213,14 +218,33 @@ BUG TRACK
 
 - Test
     bug: uninitialized constant RegistrationsController
-    solution:
-    source: 
+    solution: rails g controller registrations
+    result:
+      create  app/controllers/registrations_controller.rb
+      invoke  erb
+      create    app/views/registrations
+      invoke  test_unit
+      create    test/controllers/registrations_controller_test.rb
+      invoke  helper
+      create    app/helpers/registrations_helper.rb
+      invoke    test_unit
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/registrations.coffee
+      invoke    scss
+      create      app/assets/stylesheets/registrations.scss
 
 
 
 
+------
+COMMENTS / QUESTIONS
+------
 
+- Seeding with devise, create all fields?
 
+- take views from app/views/devise for custom registration views
+    - update registrations controller
 
 
 
