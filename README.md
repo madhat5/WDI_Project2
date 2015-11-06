@@ -162,7 +162,7 @@ SCRIPT TRACK
     - copy all views to application (rails g devise:views)
     - update routes (config/routes.rb)
 
-- Database --o--  >>>>>CLEAR USER DATA???<<<<<<
+- Database --x-- 
     - database create/check (rake db:create >> rails dbconsole)
     - model create (rails g model Name >> rails g controller names)
         - x#tables
@@ -206,8 +206,10 @@ SCRIPT TRACK
 BUG TRACK
 ------
 
-- Script track ection
-    - 
+- Database
+    bug: generated data before added user_name to users table.
+    solution: cleared users table. ran rails dbconsole >> delete from users.
+    source: http://www.postgresql.org/docs/8.2/static/dml-delete.html
 
 
 
