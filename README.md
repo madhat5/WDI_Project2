@@ -192,9 +192,13 @@ SCRIPT TRACK
 - Controller --o--
     - method writeup (per controller)
         - up to x7 (index, show, create, new, edit, update, delete)
+            - user index/show --x--
+            -
 
 - Views --o--
     - INDEX/SHOW/CREATE only to start
+        - user index/show --x--
+        - note index/show --o--
     - folder create (mkdir app/views/names)
     - views create (touch app/views/names/index.html.erb)
         - x5 (_form, show, new, edit)

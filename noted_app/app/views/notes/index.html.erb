@@ -1,0 +1,41 @@
+<!-- this is subject page to display all notes -->
+
+<h3>#Total Notes: <%= @notes.count %></h3>
+<!-- add #total notes by subject -->
+
+<!-- add if current_user = true >> display <button my profile>, and <button all notes> -->
+<button type="button"><%= link_to 'My Profile', user_path(current_user.id) %></button>
+<button type="button"><%= link_to 'All Notes', notes_path %></button>
+
+<!-- user1 = User.first -->
+<!-- user1.notes.create -->
+
+<h4>Hello <%= @user.email %></h4>
+<h4><%= link_to "Home", users_path %></h4>
+<!-- add link to new note path (as a form); make sure published by populated where == user_id -->
+</br>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Subject</th>
+      <th>Keyword</th>
+      <th>Published by</th>
+    </tr>
+  </thead>
+
+  <% @notes.each do |note| %>
+    <tr>
+      <%= link_to "#{note.subject_name}", note_path(note.id)%></td>
+      <!-- <td>note.subject_name</td> -->
+      <td><%= note.keyword %></td>
+      <td><%= note.published_by %></td>
+      <td>
+        <%= link_to 'More', product_path(item.id) %>
+        <%= link_to 'Erase', item, :method => 'delete' %>
+      </td>
+    </tr>
+  <% end %>
+</table>
+

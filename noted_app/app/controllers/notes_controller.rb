@@ -3,6 +3,9 @@ class NotesController < ApplicationController
 
   def index
     @notes = Notes.all
+
+    # do i need this?
+    @user_notes = User.notes.all
   end
 
   def show
