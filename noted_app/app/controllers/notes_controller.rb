@@ -9,6 +9,8 @@ class NotesController < ApplicationController
   end
 
 
+
+
   # STRONG PARAMS/////////////////////////////////////////////////////////////////////////////
 
   def set_note

@@ -1,8 +1,8 @@
 class CreateJoinTable < ActiveRecord::Migration
   def change
     create_join_table :notes, :users do |t|
-      # t.index [:note_id, :user_id]
-      # t.index [:user_id, :note_id]
+      t.integer :note_id
+      t.integer :user_id
     end
   end
 end

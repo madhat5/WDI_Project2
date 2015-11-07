@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151106003217) do
+ActiveRecord::Schema.define(version: 20151107185106) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,12 +23,16 @@ ActiveRecord::Schema.define(version: 20151106003217) do
     t.string   "content"
     t.string   "subject_name"
     t.string   "published_by"
+    t.integer  "users_id"
   end
 
-  create_table "notes_users", id: false, force: :cascade do |t|
-    t.integer "note_id", null: false
-    t.integer "user_id", null: false
+  create_table "notes_users", force: :cascade do |t|
+    t.integer "note_id"
+    t.integer "user_id"
   end
+
+  add_index "notes_users", ["note_id"], name: "index_notes_users_on_note_id", using: :btree
+  add_index "notes_users", ["user_id"], name: "index_notes_users_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
