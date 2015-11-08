@@ -55,7 +55,7 @@ gem 'devise'
 gem 'pry-rails'
 
 # skeleton (visuals)
-gem 'skeleton-rails', '~> 1.0'
+gem 'skeleton-rails'
 
 
 
