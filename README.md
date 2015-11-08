@@ -192,8 +192,12 @@ SCRIPT TRACK
 - Controller --o--
     - method writeup (per controller)
         - up to x7 (index, show, create, new, edit, update, delete)
-            - user index/show --x--
-            -
+            - user 
+                - index (website landing) --x--
+                - show (profile) --x--
+            - note 
+                - index (all notes page) --x--
+                - show --x-- individual note page
 
 - Views --o--
     - INDEX/SHOW/CREATE only to start

@@ -1,0 +1,19 @@
+<%= form_for @note do |query| %>
+  Name: <%= query.text_field :keyword %>
+  </br>
+  </br>
+  Borough: <%= query.text_field :content %>
+  </br>
+  </br>
+  Description: <%= query.text_field :subject_name %>
+  </br>
+  </br>
+  Population: <%= query.text_field :population %>
+  </br>
+  </br>
+  Image (url): <%= query.text_field :img_url %>
+  </br>
+  </br>
+  </br>
+  All done? <%= query.submit %>
+<% end %>
