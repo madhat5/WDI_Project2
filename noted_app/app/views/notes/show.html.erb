@@ -1,7 +1,11 @@
-<!-- add link to new note path (as a form) -->
-<button type="button"><%= link_to "Home", users_path %></button>
-<button type="button"><%= link_to 'My Profile', user_path(current_user.id) %></button>
-<button type="button"><%= link_to 'All Notes', notes_path %></button>
+<div class="container">
+
+<div class="row">
+  <!-- add link to new note path (as a form) -->
+  <button type="button"><%= link_to "Home", users_path %></button>
+  <button type="button"><%= link_to 'My Profile', user_path(current_user.id) %></button>
+  <button type="button"><%= link_to 'All Notes', notes_path %></button>
+</div>
 
 </br>
 <!-- string interpolation example -->
@@ -11,11 +15,10 @@
 <h3>Keyword: <%= @note.keyword %> </h3>
 </br>
 <h4>Subject: <%= @note.subject_name %> </h4>
-</br>
 <h4>Content:</h4>
 <p> <%= @note.content %> </p>
 
-
+</div>
 
 
 

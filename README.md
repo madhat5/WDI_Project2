@@ -260,7 +260,11 @@ COMMENTS / QUESTIONS
 
 - What does scaffold do?
 
-- add note creates 4 notes automatically?
+- todo:
+    - edit/update button
+    - if current_user = false then redirect to home
+    - css notes index/show
+    - notes join displays 
 
 
 

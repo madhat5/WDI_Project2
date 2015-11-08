@@ -1,11 +1,14 @@
+<div class="container">
 <!-- this is subject page to display all notes -->
 
-<h3>#Total Notes: <%= @notes.count %></h3>
-<!-- add #total notes by subject -->
+<div class="row">
+  <h3>#Total Notes: <%= @notes.count %></h3>
+  <!-- add #total notes by subject -->
 
-<!-- add if current_user = true >> display <button my profile>, and <button all notes> -->
-<button type="button"><%= link_to "Home", users_path %></button>
-<button type="button"><%= link_to 'My Profile', user_path(current_user.id) %></button>
+  <!-- add if current_user = true >> display <button my profile>, and <button all notes> -->
+  <button type="button"><%= link_to "Home", users_path %></button>
+  <button type="button"><%= link_to 'My Profile', user_path(current_user.id) %></button>
+</div>
 
 <!-- user1 = User.first -->
 <!-- user1.notes.create -->
@@ -43,3 +46,5 @@
 
 <!-- add a note link -->
 <p><%= link_to 'Add a Note', new_note_path %></p>
+
+</div>
