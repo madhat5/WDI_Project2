@@ -54,3 +54,12 @@ gem 'devise'
 # provides Pry for debugging
 gem 'pry-rails'
 
+# skeleton (visuals)
+gem 'skeleton-rails', '~> 1.0'
+
+
+
+
+
+
+
