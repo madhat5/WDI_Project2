@@ -263,7 +263,7 @@ COMMENTS / QUESTIONS
 - todo:
     - edit/update button
     - if current_user = false then redirect to home
-    - css notes index/show
+    - css _form
     - notes join displays 
 
 
