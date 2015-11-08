@@ -198,6 +198,7 @@ SCRIPT TRACK
             - note 
                 - index (all notes page) --x--
                 - show --x-- individual note page
+                - 
 
 - Views --o--
     - INDEX/SHOW/CREATE only to start
@@ -259,10 +260,7 @@ COMMENTS / QUESTIONS
 
 - What does scaffold do?
 
-
-
-
-
+- add note creates 4 notes automatically?
 
 
 

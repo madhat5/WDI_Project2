@@ -31,10 +31,12 @@
       <td><%= note.keyword %></td>
       <td><%= note.published_by %></td>
       <td>
-        <%= link_to 'More', product_path(item.id) %>
-        <%= link_to 'Erase', item, :method => 'delete' %>
+        <%= link_to 'More', note_path(note.id) %>
+        <%= link_to 'Erase', note, :method => 'delete' %>
       </td>
     </tr>
   <% end %>
 </table>
 
+<!-- add a note link -->
+<p><%= link_to 'Add a Note', new_note_path %></p>
