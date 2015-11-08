@@ -261,10 +261,9 @@ COMMENTS / QUESTIONS
 - What does scaffold do?
 
 - todo:
-    - edit/update button
-    - if current_user = false then redirect to home
-    - css _form
     - notes join displays 
+    - heroku
+    - skeleton tables
 
 
 
