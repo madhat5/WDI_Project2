@@ -4,14 +4,14 @@
 <!-- add #total notes by subject -->
 
 <!-- add if current_user = true >> display <button my profile>, and <button all notes> -->
+<button type="button"><%= link_to "Home", users_path %></button>
 <button type="button"><%= link_to 'My Profile', user_path(current_user.id) %></button>
-<button type="button"><%= link_to 'All Notes', notes_path %></button>
 
 <!-- user1 = User.first -->
 <!-- user1.notes.create -->
-
-<h4><%= link_to "Home", users_path %></h4>
 <!-- add link to new note path (as a form); make sure published by populated where == user_id -->
+</br>
+</br>
 </br>
 
 
