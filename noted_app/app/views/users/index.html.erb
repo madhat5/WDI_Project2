@@ -1,9 +1,13 @@
-<h3>#Total Users: <%= @users.count %></h3>
-<h3>#Total Notes: <%= @notes.count %></h3>
+<div class="container">
 
-<!-- add #total notes by subject -->
+  <h3>#Total Users: <%= @users.count %></h3>
 
-<!-- add if current_user = true >> display <button my profile>, and <button all notes> -->
-<button type="button"><%= link_to 'My Profile', user_path(current_user.id) %></button>
+  <h3>#Total Notes: <%= @notes.count %></h3>
+  <!-- add #total notes by subject -->
 
-<button type="button"><%= link_to 'All Notes', notes_path %></button>
+  <!-- add if current_user = true >> display <button my profile>, and <button all notes> -->
+  <button class="button-primary"><%= link_to 'My Profile', user_path(current_user.id) %></button>
+
+  <button class="button-primary"><%= link_to 'All Notes', notes_path %></button>
+
+</div>
