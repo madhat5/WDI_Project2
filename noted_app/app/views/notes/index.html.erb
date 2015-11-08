@@ -24,9 +24,12 @@
     </tr>
   </thead>
 
+
+<!-- switch subjet link with keyword link -->
+<!-- make subject link pull all notes with subject == same? -->
   <% @notes.each do |note| %>
     <tr>
-      <%= link_to "#{note.subject_name}", note_path(note.id)%></td>
+      <td><%= link_to "#{note.subject_name}", note_path(note.id)%></td>
       <!-- <td>note.subject_name</td> -->
       <td><%= note.keyword %></td>
       <td><%= note.published_by %></td>

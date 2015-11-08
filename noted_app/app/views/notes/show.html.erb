@@ -1,12 +1,28 @@
 <h4><%= link_to "Home", users_path %></h4>
+<!-- add link to new note path (as a form) -->
+<button type="button"><%= link_to 'My Profile', user_path(current_user.id) %></button>
+<button type="button"><%= link_to 'All Notes', notes_path %></button>
 
 </br>
 <!-- string interpolation example -->
 <!-- <h3>String interpolation: < link_to "#{@user.email}", user_path %></h3> -->
 
-<!-- add link to new note path (as a form) -->
 
-<h3>My Notes:</h3>
+<h3>Keyword: <%= @note.keyword %> </h3>
+</br>
+<h4>Subject: <%= @note.subject_name %> </h4>
+</br>
+<h4>Content:</h4>
+<p> <%= @note.content %> </p>
+
+
+
+
+
+
+<!-- SCRAPPED SCRIPTS -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////// -->
+<!-- <h3>My Notes:</h3>
 <table>
   <thead>
     <tr>
@@ -14,21 +30,16 @@
     </tr>
   </thead>
 
-  <% @user.notes.each do |note| %>
+   @notes.each do |note| %>
     <tr>
-      <td>
+      <td> -->
       <!-- just in case: <erb_tag note.keyword  erb_tag> -->
-      <%= link_to "#{note.keyword}", note_path(note.id)%></td>
-      <td>
+       <!-- link_to "#{note.keyword}", note_path(note.id)</td> -->
+      <!-- <td> -->
         <!-- just in case: <erb_tag link_to 'More', note_path(note.id) erb_tag> -->
-        <%= link_to 'Erase', note, :method => 'delete' %>
-      </td>
+         <!-- link_to 'Erase', note, :method => 'delete'  -->
+<!--       </td>
     </tr>
-  <% end %>
-</table>
-
-<!-- add bookmarked notes -->
-
-<h4> <%= @note.subject_name %> </h4>
-<p> <%= @note.content %> </p>
-
+   end %>
+</table> -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////// -->
