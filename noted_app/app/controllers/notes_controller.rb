@@ -14,6 +14,7 @@ class NotesController < ApplicationController
   def create
     @note = Note.create(note_params)
     # redirect to user home?
+    @note.users_id = current_user.id
     redirect_to notes_path
   end
 

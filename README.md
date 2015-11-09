@@ -262,6 +262,7 @@ COMMENTS / QUESTIONS
 
 - todo:
     - notes join displays 
+        - @notes.published_by = current_user (when create new note)
     - heroku
     - skeleton tables
 
