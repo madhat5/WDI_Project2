@@ -12,25 +12,27 @@
 <!-- add link to new note path (as a form) -->
 
 <h3>My Notes:</h3>
-<table>
+<table class="u-full-width">
   <thead>
     <tr>
       <th>Keyword</th>
     </tr>
   </thead>
-
-  <% @user.notes.each do |note| %>
-    <tr>
-      <td>
-      <!-- just in case: <erb_tag note.keyword  erb_tag> -->
-      <%= link_to "#{note.keyword}", note_path(note.id)%></td>
-      <td>
-        <!-- just in case: <erb_tag link_to 'More', note_path(note.id) erb_tag> -->
-        <%= link_to 'Erase', item, :method => 'delete' %>
-      </td>
-    </tr>
-  <% end %>
+  <tbody>
+    <% @user.notes.each do |note| %>
+      <tr>
+        <td>
+        <!-- just in case: <erb_tag note.keyword  erb_tag> -->
+        <%= link_to "#{note.keyword}", note_path(note.id) %></td>
+        <td>
+          <!-- just in case: <erb_tag link_to 'More', note_path(note.id) erb_tag> -->
+          <%= link_to 'Erase', item, :method => 'delete' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>
+
 
 </div>
 
