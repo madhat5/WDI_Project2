@@ -59,7 +59,7 @@ This app will alow users to:
 - Frameworks used (goals):
     - Rails
     - Devise (user authentification)
-    - Bootstrap (user inter)
+    - Skeleton
 
 
 ------
@@ -167,6 +167,9 @@ SCRIPT TRACK
     - copy all views to application (rails g devise:views)
     - update routes (config/routes.rb)
 
+- Visual framework 
+    - (skeleton, bootstrap, foundation, etc)
+
 - Database --x-- 
     - database create/check (rake db:create >> rails dbconsole)
     - model create (rails g model Name >> rails g controller names)
@@ -207,14 +210,14 @@ SCRIPT TRACK
     - folder create (mkdir app/views/names)
     - views create (touch app/views/names/index.html.erb)
         - x5 (_form, show, new, edit)
-    - Bootstrap
+    - visual framework updates
+
+- Heroku
+    - setup
 
 - Test --ox--
     - launch server (rails s)
     - update README
-
-- Heroku
-    - https://github.com/ga-students/wdi_lettuce_students/blob/master/w06/d05/INSTRUCTOR/heroku.md
 
 - Extras
     - make Number42 user as sample notes
