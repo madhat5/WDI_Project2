@@ -38,6 +38,8 @@ class NotesController < ApplicationController
 
   # STRONG PARAMS/////////////////////////////////////////////////////////////////////////////
 
+  # private???
+
   def set_note
     @note = Note.find(params[:id])
   end

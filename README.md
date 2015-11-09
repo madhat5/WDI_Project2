@@ -53,7 +53,6 @@ This app will alow users to:
     - Login,
     - Post classroom notes (by subject) to their profile,
     - View other users' classroom notes,
-    - Bookmark other user's classroom notes
 
 
 - Frameworks used (goals):
